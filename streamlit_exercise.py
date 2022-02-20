@@ -4,8 +4,6 @@ pio.renderers.default = "vscode"
 
 import matplotlib.pyplot as plt
 import plotly.express as px
-import plotly.offline as py
-from plotly.figure_factory import create_table
 
 #Importing streamlit
 import streamlit as st
