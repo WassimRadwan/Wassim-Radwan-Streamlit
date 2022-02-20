@@ -1,5 +1,3 @@
-from random import choices
-from nbformat import write
 import plotly.graph_objs as go
 import plotly.io as pio
 pio.renderers.default = "vscode"
