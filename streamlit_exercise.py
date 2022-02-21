@@ -77,7 +77,7 @@ if attribute =='Covid_Grouped Dataset':
 
 
 #Importing Dataset2
-    dataset2 = pd.read_csv(covid_grouped.csv")
+dataset2 = pd.read_csv(covid_grouped.csv")
     if st.button('To see a small sample of the dataset'):
         st.subheader("A Glimpse of the Dataset")
         st.write(dataset2.head(10))
