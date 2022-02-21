@@ -77,7 +77,7 @@ if attribute =='Covid_Grouped Dataset':
 
 
 #Importing Dataset2
-dataset2 = pd.read_csv(covid_grouped.csv")
+dataset2 = pd.read_csv("covid_grouped.csv")
     if st.button('To see a small sample of the dataset'):
         st.subheader("A Glimpse of the Dataset")
         st.write(dataset2.head(10))
@@ -112,7 +112,7 @@ dataset2 = pd.read_csv(covid_grouped.csv")
 
 if attribute == 'Covid-19 in the United States':
     st.balloons()
-    dataset2 = pd.read_csv(covid_grouped.csv")
+    dataset2 = pd.read_csv("covid_grouped.csv")
     df_US= dataset2.loc[dataset2["Country/Region"]=="US"]
     st.text("Since Covid-19 affected the United States of America the most, we decided to explore it even further")
     st.write(df_US.head())
