@@ -16,7 +16,7 @@ st.header("My First Web Application using Streamlit")
 st.markdown("""
 Done by: Wassim Radwan
 """)
-
+dataset2 = pd.read_csv("covid_grouped.csv")
 #First Dataset
 #Attributes
 attribute = st.sidebar.radio('Which Attribute Would You Like To Select?',
@@ -75,9 +75,6 @@ if attribute =='Covid_Grouped Dataset':
     with st.expander("Click for more information on the dataset:"): 
         st.write("This dataset contains Date(from 20-01-22 to 20-07-27), Country/Region, Confirmed, Deaths, Recovered, Active, New cases, New deaths, New recovered, WHO Region, iso_alpha.")
 
-
-#Importing Dataset2
-dataset2 = pd.read_csv("covid_grouped.csv")
     if st.button('To see a small sample of the dataset'):
         st.subheader("A Glimpse of the Dataset")
         st.write(dataset2.head(10))
